@@ -1,0 +1,79 @@
+.field {
+  background-color: rgb(240, 239, 239);
+  border: 1px solid black;
+}
+
+.field:hover {
+  background-color: rgb(117, 117, 117);
+}
+
+.field-red,
+.field-red:hover {
+  background-color: rgb(255, 198, 198);
+}
+.field-blue,
+.field-blue:hover {
+  background-color: rgb(198, 239, 255);
+}
+
+/* Grid */
+
+#game-board {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "r1-c1 r1-c2 r1-c3"
+    "r2-c1 r2-c2 r2-c3"
+    "r3-c1 r3-c2 r3-c3";
+}
+#winner {
+  font-family: sans-serif;
+  width: 302px;
+  height: 38px;
+  text-align: center;
+}
+#restart {
+  font-family: sans-serif;
+  width: 302px;
+  height: 38px;
+  text-align: center;
+}
+#r1-c1 {
+  grid-area: r1-c1;
+}
+
+#r1-c2 {
+  grid-area: r1-c2;
+}
+
+#r1-c3 {
+  grid-area: r1-c3;
+}
+
+#r2-c1 {
+  grid-area: r2-c1;
+}
+
+#r3-c1 {
+  grid-area: r3-c1;
+}
+
+#r2-c2 {
+  grid-area: r2-c2;
+}
+
+#r2-c3 {
+  grid-area: r2-c3;
+}
+
+#r3-c2 {
+  grid-area: r3-c2;
+}
+
+#r3-c3 {
+  grid-area: r3-c3;
+}
